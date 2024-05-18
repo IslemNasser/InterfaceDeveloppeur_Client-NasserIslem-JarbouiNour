@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from shreethemes.in/bizcell/layouts/blog-author.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Mar 2024 22:27:28 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <title>Bizcell - Landing Page Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 5 Landing Page Template" />
+    <meta name="keywords" content="bootstrap 5, premium, marketing, multipurpose" />
+    <meta name="author" content="Shreethemes" />
+    <meta name="website" content="https://shreethemes.in/" />
+    <meta name="email" content="support@shreethemes.in" />
+    <meta name="version" content="1.0.0" />
+
+
+</head>
+
+<body>
+   
+    <header id="topnav" class="defaultscroll sticky" style="background-color: whitesmoke;">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <img src="assets/images/logo-dark.png" class="logo-light-mode" alt="">
+                <img src="assets/images/logo-light.png" class="logo-dark-mode" alt="">
+            </a>
+            <!-- End Logo container-->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+
+           
+
+
+
+            <header id="topnav" class="defaultscroll sticky">
+                <div class="container">
+                    <!-- Logo container-->
+                    <a class="logo" href="index.html">
+                        <img src="assets/images/logo-dark.png" class="logo-light-mode" alt="">
+                        <img src="assets/images/logo-light.png" class="logo-dark-mode" alt="">
+                    </a>
+                    <!-- End Logo container-->
+                    <div class="menu-extras">
+                        <div class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </div>
+                    </div>
+            
+                    <ul class="buy-button list-inline mb-0">
+                        <li class="list-inline-item search-icon mb-0">
+                            <div class="dropdown">
+                                <button  (click)="logout()"type="button" class="btn btn-link text-decoration-none dropdown-toggle mb-0 p-0"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="assets/images/logos/deconnecter.png" style="    width: 30px;
+                                    ">
+                                </button>
+                              
+                            </div>
+                        </li>
+                    </ul>
+            
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu nav-right">
+                            <li class="has-submenu parent-parent-menu-item">
+                                <a href=""></a><span class="menu-arrow"></span>
+                                <ul class="submenu">
+                                    <li>
+                                       
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button style="position: relative;
+                                top: 20px;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Launch demo modal
+                                  </button>
+                                  
+                            </li>
+                            <li><a href='projet' class="sub-menu-item">Mes Projets</a></li>
+                           <!-- Navbar -->
+                          
+<!-- Navbar -->
+            
+            
+                            <li class="has-submenu parent-parent-menu-item">
+                                <a >Deconnexion</a>
+                               
+                            </li>
+            
+                        </ul>
+                        <!--end navigation menu-->
+                    </div>
+                    <!--end navigation-->
+                </div>
+                <!--end container-->
+            </header>
+
+            <!--end navigation-->
+        </div>
+        <!--end container-->
+    </header>
+    <!--end header-->
+    <!-- Navbar End -->
+
+    <!-- Start -->
+  <section class="bg-half-220">
+        <div >
+            <div >
+                <div class="card-body pt-9 pb-0">
+                    <!--begin::Details-->
+                    <div class="d-flex flex-wrap flex-sm-nowrap">
+                        <!--begin: Pic-->
+                        <div class="me-7 mb-4">
+                            <div
+                                class="symbol symbol-100px symbol-lg-160px symbol-fixed position-relative">
+                                <img src="../assets/images/team/4.jpg"  class="img-fluid avatar avatar-large rounded-pill shadow border mt-4"
+                                alt="" />
+                                <div
+                                    class="position-absolute translate-middle bottom-0 start-100 mb-6 bg-success rounded-circle border border-4 border-body h-20px w-20px">
+                                </div>
+                            </div>
+                        </div>
+                        <!--end::Pic-->
+
+                        <!--begin::Info-->
+                        <div class="flex-grow-1">
+                            <!--begin::Title-->
+                            <div
+                                class="d-flex justify-content-between align-items-start flex-wrap mb-2">
+                                <!--begin::User-->
+                                <div class="d-flex flex-column">
+                                    <!--begin::Name-->
+                                    <div class="d-flex align-items-center mb-2">
+                                        <a href="#"
+                                            class="text-gray-900 text-hover-primary fs-2 fw-bold me-1" style="color:black;">
+                                           {{userDetails.nom}} {{userDetails.prenom}}</a>
+                                        <img src="../assets/images/logos/verified.png" alt="" style="width: 30px;
+                                        ">
+                                    </div>
+                                    <!--end::Name-->
+
+                                    <!--begin::Info-->
+                                    <div class="d-flex flex-wrap fw-semibold fs-6 mb-4 pe-2">
+                                        <a href="#"
+                                            class="d-flex align-items-center text-gray-500 text-hover-primary me-5 mb-2 ">
+                                            <div><img src="assets/images/logos/user.png" class="me-3"
+                                                    style="width:20px; position: relative;
+                                                    left: 10px;"> Developpeur
+                                            </div>
+                                        </a>
+
+                                        <a href="#"
+                                            class="d-flex align-items-center text-gray-500 text-hover-primary mb-2 me-1">
+                                            <div><img src="assets/images/logos/gmail.png"
+                                                    class="me-1" style="width:20px;">{{userDetails.email}}</div>
+                                            <div></div>
+                                        </a>
+                                    </div>
+                                    <!--end::Info-->
+                                </div>
+                                <!--end::User-->
+
+                                <!--begin::Actions-->
+
+                                <!--end::Actions-->
+                            </div>
+                            <!--end::Title-->
+
+                            <!--begin::Stats-->
+                            <div class="d-flex flex-wrap flex-stack">
+                                <!--begin::Wrapper-->
+                                <div class="d-flex flex-column flex-grow-1 pe-8">
+                                    <!--begin::Stats-->
+                                    <div class="d-flex flex-wrap">
+                                        <!--begin::Stat-->
+                                        <div
+                                            class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
+                                            <!--begin::Number-->
+                                            <div class="d-flex align-items-center">
+                                                <img src="assets/images/logos/facebook.png" class="me-1"
+                                                    style="width:25px;">
+
+                                                <div class="fs-2 fw-bold"></div>
+                                            </div>
+                                            <!--end::Number-->
+
+                                            <!--begin::Label-->
+                                            <a href="" class="fw-semibold fs-6 text-gray-500" style="color: black;">Facebook
+                                            </a>
+                                            <!--end::Label-->
+                                        </div>
+                                        <div
+                                            class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
+                                            <!--begin::Number-->
+                                            <div class="d-flex align-items-center">
+                                                <img src="assets/images/logos/twitter.png" class="me-1"
+                                                    style="width:25px;">
+
+                                                <div class="fs-2 fw-bold"></div>
+                                            </div>
+                                            <!--end::Number-->
+
+                                            <!--begin::Label-->
+                                            <a href="" class="fw-semibold fs-6 text-gray-500" style="color: black;">Twitter
+                                            </a>
+                                            <!--end::Label-->
+                                        </div>
+                                        <!--end::Stat-->
+
+                                        <!--begin::Stat-->
+                                        <div
+                                            class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
+                                            <!--begin::Number-->
+                                            <div class="d-flex align-items-center">
+                                                <img src="assets/images/logos/linkedin.png" class="me-1"
+                                                    style="width:25px;">
+
+                                                <div class="fs-2 fw-bold"></div>
+                                            </div>
+                                            <!--end::Number-->
+
+                                            <!--begin::Label-->
+                                            <a href="" class="fw-semibold fs-6 text-gray-500" style="color: black;">Linkedin
+                                            </a>
+                                            <!--end::Label-->
+                                        </div>
+                                        <!--end::Stat-->
+
+                                        <!--begin::Stat-->
+                                        <div
+                                            class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
+                                            <!--begin::Number-->
+                                            <div class="d-flex align-items-center">
+                                                <img src="assets/images/logos/instagram.png" class="me-1"
+                                                    style="width:25px;">
+
+                                                <div class="fs-2 fw-bold"></div>
+                                            </div>
+                                            <!--end::Number-->
+
+                                            <!--begin::Label-->
+                                            <a href="" class="fw-semibold fs-6 text-gray-500" style="color: black;">Instagram
+                                            </a>
+                                            <!--end::Label-->
+                                        </div>
+                                        <!--end::Stat-->
+                                    </div>
+                                    <!--end::Stats-->
+                                </div>
+                                <!--end::Wrapper-->
+
+                                <!--begin::Progress-->
+
+                                <!--end::Progress-->
+                            </div>
+                            <!--end::Stats-->
+                        </div>
+                        <!--end::Info-->
+                    </div>
+                    
+                    <!--end::Details-->
+
+                    <!--begin::Navs-->
+
+                    <!--begin::Navs-->
+                </div>
+            </div>
+      
+                <!--end col-->
+   
+                <div >
+                    <div >
+                        <div class="component-wrapper rounded shadow">
+                            <div class="p-4 bg-light">
+                                <h5 class="title mb-0"> détails de la profil</h5>
+                            </div>
+
+                            <div class="p-4">
+                                <div class="primary-form mt-3 p-4 bg-light shadow">
+                                    <form (ngSubmit)="updateDeveloppeur()" [formGroup]="updateForm">
+                                        <p class="mb-0" id="error-msg"></p>
+                                        <div id="simple-msg"></div>
+                                        <div class="row">
+                                            <div class="col-16">
+                                                <label class="form-label fs-6 mt-3 mb-1">Votre nom </label>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="form-icon position-relative">
+                                                            <i class="mdi mdi-account icon-sm icons"></i>
+                                                            <input name="name" formControlName="nom" type="text"
+                                                                class="form-control ps-5 fs-6"
+                                                               >
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6"style=" position: relative;
+                                                    bottom: 23px;">
+                                                        <label >Votre Prénom</label>
+                                                    
+                                                        <div class="form-icon position-relative">
+                                                            <i class="mdi mdi-account icon-sm icons"></i>
+                                                            <input name="name"formControlName="prenom" type="text"
+                                                                class="form-control ps-5 fs-6"
+                                                                >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label class="form-label fs-6 mt-3 mb-1">Votre Email </label>
+                                                <div class="form-icon position-relative">
+                                                    <i class="mdi mdi-email-outline icon-sm icons"></i>
+                                                    <input name="email" formControlName="email" type="email"
+                                                        class="form-control ps-5 fs-6" >
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label class="form-label fs-6 mt-3 mb-1">Votre Mot De Passe </label>
+                                                <div class="form-icon position-relative">
+                                                    <i class="mdi mdi-email-outline icon-sm icons"></i>
+                                                    <input name="email" formControlName="mdp" type="password"
+                                                        class="form-control ps-5 fs-6" >
+                                                </div>
+
+                                            </div>
+                                            <!--end col-->
+
+                                            <div class="col-12">
+                                                <label class="form-label fs-6 mt-3 mb-1">Adresse</label>
+                                                <div class="form-icon position-relative">
+                                                    <i class="mdi mdi-book-outline icon-sm icons"></i>
+                                                    <input  formControlName="adresse"
+                                                        class="form-control ps-5 fs-6" >
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-12">
+                                                <label class="form-label fs-6 mt-3 mb-1">Teléphone</label>
+                                                <div class="form-icon position-relative">
+                                                    <i class="mdi mdi-book-outline icon-sm icons"></i>
+                                                    <input name="subject" formControlName="tel"
+                                                        class="form-control ps-5 fs-6" >
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+
+                                          
+                                        </div>
+                                        <!-- end row -->
+                                        <div class="row">
+                                            <div class="col-12 fs-6 mt-3">
+                                                <button type="button" class="btn btn-primary" (click)="basculerEditionChamps()">Modifier</button>
+                                    
+                                                <!-- Bouton "Enregistrer" visible seulement si les champs sont éditables -->
+                                                <button type="submit" class="btn btn-primary" *ngIf="boutonVisible">Enregistrer</button>
+                                            </div>
+                                            <!--end col-->
+                                        </div>
+                                        <!--end row-->
+                                    </form>
+                                    <!-- end form -->
+                                </div>
+                                <!--end primary-form-->
+                            </div>
+                        </div>
+                    </div>
+
+                  
+                </div></div>
+                <!--end col-->
+           
+            <!--end row-->
+        
+        <!--end container-->
+    <!--end section-->
+    <!-- End -->
+
+    <!-- Insta Post Start -->
+  
+    <!--end container-->
+    <!-- Insta Post End -->
+
+
+    <!-- Footer Start -->
+    <app-footer></app-footer>
+</section>
+    <!--end footer-->
+    <!-- Footer End -->
+
+    <!-- Style switcher -->
+    <div id="style-switcher" class="bg-light border p-3 pt-2 pb-2" onclick="toggleSwitcher()">
+        <div>
+            <h6 class="title text-center">Select Your Color</h6>
+            <ul class="pattern">
+                <li class="list-inline-item">
+                    <a class="color1" href="javascript: void(0);" onclick="setColor('default')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color2" href="javascript: void(0);" onclick="setColor('blue')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color3" href="javascript: void(0);" onclick="setColor('yellow')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color4" href="javascript: void(0);" onclick="setColor('dark-pink')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color5" href="javascript: void(0);" onclick="setColor('orange')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color6" href="javascript: void(0);" onclick="setColor('brown')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color7" href="javascript: void(0);" onclick="setColor('green')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color8" href="javascript: void(0);" onclick="setColor('purple')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color9" href="javascript: void(0);" onclick="setColor('firozi')"></a>
+                </li>
+            </ul>
+        </div>
+       
+    </div>
+    <!-- end Style switcher -->
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top rounded-pill text-center" id="back-to-top">
+        <i class="mdi mdi-chevron-up d-block"> </i>
+    </a>
+    <!-- Back to top -->
+
+    <!-- javascript -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form (ngSubmit)="addNewEmail()" [formGroup]="EmailForm">
+            <div class="modal-body">
+                <div class="form-group">
+             <input class="form-control" formControlName="destinataire" type="email" placeholder="Taper email">
+            </div>
+            <div class="form-group">
+                <input class="form-control"  formControlName="sujet" type="text" placeholder="Taper votre sujet">
+               </div>
+               <div class="form-group">
+                <input class="form-control"  formControlName="message" type="text" placeholder="Taper votre message">
+               </div>
+             
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+              <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+        </form>
+          </div>
+        
+        </div>
+      </div>
+</body>
+
+
+<!-- Mirrored from shreethemes.in/bizcell/layouts/blog-author.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Mar 2024 22:27:28 GMT -->
+</html>

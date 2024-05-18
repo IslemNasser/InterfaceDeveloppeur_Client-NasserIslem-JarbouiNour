@@ -62,7 +62,7 @@ export class LoginDevComponent {
           let token = res.token;
           localStorage.setItem("myToken",res.token);
           localStorage.setItem("role",res.role);
-          this.router.navigate(['']).then(()=>window.location.reload());
+          this.router.navigate(['/profil']).then(()=>window.location.reload());
       },
        
         err=>{

@@ -70,7 +70,7 @@ export class ContactComponent {
           summary: 'Contactistrateur est Envoyé avec succés',
         });
 
-        this.router.navigate(['login']);
+        this.router.navigate(['/']);
       },
       err=>{
         console.log(err);

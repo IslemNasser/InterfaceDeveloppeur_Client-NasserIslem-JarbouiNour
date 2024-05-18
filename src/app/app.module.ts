@@ -15,6 +15,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceComponent } from './service/service.component';
 import { ResetMdpDevComponent } from './reset-mdp-dev/reset-mdp-dev.component';
+import { ProfilComponent } from './profil/profil.component';
+import { ProjetComponent } from './projet/projet.component';
+import { TacheComponent } from './tache/tache.component';
+import { ListContactComponent } from './list-contact/list-contact.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import { ResetMdpDevComponent } from './reset-mdp-dev/reset-mdp-dev.component';
     LoginDevComponent,
     RegisterComponent,
     ServiceComponent,
-    ResetMdpDevComponent
+    ResetMdpDevComponent,
+    ProfilComponent,
+    ProjetComponent,
+    TacheComponent,
+    ListContactComponent
   ],
   imports: [
     BrowserModule,

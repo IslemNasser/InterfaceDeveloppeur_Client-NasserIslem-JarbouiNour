@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from shreethemes.in/bizcell/layouts/blog-three-column.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Mar 2024 22:27:25 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <title>Bizcell - Landing Page Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 5 Landing Page Template" />
+    <meta name="keywords" content="bootstrap 5, premium, marketing, multipurpose" />
+    <meta name="author" content="Shreethemes" />
+    <meta name="website" content="https://shreethemes.in/" />
+    <meta name="email" content="support@shreethemes.in" />
+    <meta name="version" content="1.0.0" />
+
+</head>
+
+<body>
+     <!-- <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="cube1"></div>
+                <div class="cube2"></div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Navbar STart -->
+    <header id="topnav" class="defaultscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <img src="assets/images/logo-dark.png" class="logo-light-mode" alt="">
+                <img src="assets/images/logo-light.png" class="logo-dark-mode" alt="">
+            </a>
+            <!-- End Logo container-->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+
+            <ul class="buy-button list-inline mb-0">
+                <li class="list-inline-item search-icon mb-0">
+                    <div class="dropdown">
+                        <a href='/profil' class="btn btn-link text-decoration-none dropdown-toggle mb-0 p-0"
+                           >
+                            <img src="/assets/images/logos/fleche-droite.png" style="width: 30px;">
+                    </a>
+                        
+                    </div>
+                </li>
+            </ul>
+
+            <div id="navigation">
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu nav-right">
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href='/projet' class="text-primary">Mes Projets</a><span class="menu-arrow"></span>
+                       
+                    </li>
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="javascript:void(0)">Mes taches</a><span class="menu-arrow"></span>
+                       
+                    </li>
+
+
+                    <li class="has-submenu parent-menu-item"><a href='/profil'>Retour</a><span
+                            class="submenu-arrow"></span>
+                        
+                    </li>
+                </ul>
+                <!--end navigation menu-->
+            </div>
+            <!--end navigation-->
+        </div>
+        <!--end container-->
+    </header>
+    <!--end header-->
+    <!-- Navbar End -->
+
+    <!-- Start Home -->
+    <section class="bg-default page-next-level" style="background: url(assets/images/bg/bg-page.png) center no-repeat;">
+        <div class="home-center">
+            <div class="home-desc-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <div class="text-center">
+                                <h3 class="title-pager mb-0"> Projets </h3>
+                            </div>
+                            <ul class="page-next text-center mt-4 pt-2">
+                                <li><a href="index.html" class="text-dark fs-6">CollabPro</a></li>
+                                <li><a href="#" class="text-dark fs-6">Prejets</a></li>
+                                <li>
+                                    <span class="text-primary fs-6">Liste des projets</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--end col-->
+
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end container-->
+            </div>
+        </div>
+    </section>
+    <!--end section-->
+
+    <!-- Blog Start -->
+        <div class="container"  *ngFor="let projet of listProjet">
+        <div class="mt-2"  >
+              <div   class="d-style btn btn-brc-tp border-2 bgc-white btn-outline-blue btn-h-outline-blue btn-a-outline-blue w-100 my-2 py-3 shadow-sm">
+                <!-- Basic Plan -->
+                <div class="row align-items-center"  >
+                  <div class="col-12 col-md-4">
+                    <h4 class="pt-3 text-170 text-600 text-primary-d1 letter-spacing"  >
+                     {{projet.nom}}
+                    </h4>
+
+                  </div>
+        
+                  <ul  class="list-unstyled mb-0 col-12 col-md-4 text-dark-l1 text-90 text-left my-4 my-md-0"  >
+                    
+        
+                    <li class="mt-25">
+                      <i class="fa fa-check text-success-m2 text-110 mr-2 mt-1"></i>
+                      <span class="text-110">
+                        Placerat duis
+                    </span>
+                    </li>
+        
+                    <li class="mt-25">
+                      <i class="fa fa-times text-danger-m3 text-110 mr-25 mt-1"></i>
+                      <span class="text-110">
+                        Tortor mauris
+                    </span>
+                    </li>
+                  </ul>
+        
+                  <div class="col-12 col-md-4 text-center">
+                    <a href='
+                    /tache' class="f-n-hover btn btn-info btn-raised px-4 py-25 w-75 text-600" *ngIf="projet.status=='en cours'">En cours</a>
+                  </div>
+                  <div class="col-12 col-md-4 text-center" *ngIf="projet.status=='Terminé'" style="position: relative;
+                  left: 740px;
+                  bottom: 40px;
+                  align-content: center;">
+                    <button type="button"  class="f-n-hover btn btn-success btn-raised px-4 py-25 w-75 text-600" data-toggle="modal" data-target="#staticBackdrop">Terminé</button>
+                  </div>
+                  <div class="col-12 col-md-4 text-center" style="    position: relative;
+                  left: 750px;
+                  bottom: 35px;">
+                    <a href="#" class="f-n-hover btn btn-warning btn-raised px-4 py-25 w-75 text-600"*ngIf="projet.status=='En attente'">En attente</a>
+                  </div>
+                </div>
+        
+              </div>
+        
+        
+        
+              
+        
+        
+        
+              
+            </div>
+        </div>
+        <!--end container-->
+   
+    <!--end section-->
+    <!-- Blog End -->
+
+    <!-- Partner Start -->
+  
+    <!--end footer-->
+    <!-- Footer End -->
+
+ <!-- Style switcher -->
+ <div id="style-switcher" class="bg-light border p-3 pt-2 pb-2" onclick="toggleSwitcher()">
+    <div>
+        <h6 class="title text-center">Select Your Color</h6>
+        <ul class="pattern">
+            <li class="list-inline-item">
+                <a class="color1" href="javascript: void(0);" onclick="setColor('default')"></a>
+            </li>
+            <li class="list-inline-item">
+                <a class="color2" href="javascript: void(0);" onclick="setColor('blue')"></a>
+            </li>
+            <li class="list-inline-item">
+                <a class="color3" href="javascript: void(0);" onclick="setColor('yellow')"></a>
+            </li>
+            <li class="list-inline-item">
+                <a class="color4" href="javascript: void(0);" onclick="setColor('dark-pink')"></a>
+            </li>
+            <li class="list-inline-item">
+                <a class="color5" href="javascript: void(0);" onclick="setColor('orange')"></a>
+            </li>
+            <li class="list-inline-item">
+                <a class="color6" href="javascript: void(0);" onclick="setColor('brown')"></a>
+            </li>
+            <li class="list-inline-item">
+                <a class="color7" href="javascript: void(0);" onclick="setColor('green')"></a>
+            </li>
+            <li class="list-inline-item">
+                <a class="color8" href="javascript: void(0);" onclick="setColor('purple')"></a>
+            </li>
+            <li class="list-inline-item">
+                <a class="color9" href="javascript: void(0);" onclick="setColor('firozi')"></a>
+            </li>
+        </ul>
+    </div>
+   
+</div>
+<!-- end Style switcher -->
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top rounded-pill text-center" id="back-to-top">
+        <i class="mdi mdi-chevron-up d-block"> </i>
+    </a>
+    <!-- Back to top -->
+
+    <!-- javascript -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Etat de Projet</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h3>Ce Projet est terminé</h3>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+              <button type="submit" class="btn btn-success">OK</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+</body>
+
+
+<!-- Mirrored from shreethemes.in/bizcell/layouts/blog-three-column.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Mar 2024 22:27:25 GMT -->
+</html>
